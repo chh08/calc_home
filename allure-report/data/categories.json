@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert -0.1 == 0.3",
+      "children" : [ {
+        "name" : "test_add[failed]",
+        "uid" : "b34bb6471acf6d59",
+        "parentUid" : "fb1e0065dc0c3c9adac6ca28b9995c4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613654698539,
+          "stop" : 1613654698539,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, -0.2, 0.3]" ]
+      }, {
+        "name" : "test_sub[failed]",
+        "uid" : "7c4fdb700a9415d4",
+        "parentUid" : "fb1e0065dc0c3c9adac6ca28b9995c4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613654698719,
+          "stop" : 1613654698719,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, 0.2, 0.3]" ]
+      } ],
+      "uid" : "fb1e0065dc0c3c9adac6ca28b9995c4a"
+    }, {
+      "name" : "AssertionError: assert -0.5 == 0.3",
+      "children" : [ {
+        "name" : "test_div[failed]",
+        "uid" : "1a049dac32bf4a2d",
+        "parentUid" : "f7b32e1fb57c7355328fd08c1bdcff72",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613654698693,
+          "stop" : 1613654698693,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, -0.2, 0.3]" ]
+      } ],
+      "uid" : "f7b32e1fb57c7355328fd08c1bdcff72"
+    }, {
+      "name" : "AssertionError: assert -0.02 == 0.3",
+      "children" : [ {
+        "name" : "test_mul[failed]",
+        "uid" : "88bd4e50f36b8c24",
+        "parentUid" : "19fde5a83f3a30dc57da7a01d3adfb43",
+        "status" : "failed",
+        "time" : {
+          "start" : 1613654698743,
+          "stop" : 1613654698744,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, -0.2, 0.3]" ]
+      } ],
+      "uid" : "19fde5a83f3a30dc57da7a01d3adfb43"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

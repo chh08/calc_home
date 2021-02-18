@@ -1,0 +1,152 @@
+{
+  "uid" : "88bd4e50f36b8c24",
+  "name" : "test_mul[failed]",
+  "fullName" : "test_calc.TestCalc#test_mul",
+  "historyId" : "b51952daefdbc0d8e61623f5f10e7fe9",
+  "time" : {
+    "start" : 1613654698743,
+    "stop" : 1613654698744,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.02 == 0.3",
+  "statusTrace" : "self = <test_calc.TestCalc object at 0x0000024BCD673490>, get_calc = <calc.calculator object at 0x0000024BCD5CE5B0>, get_datas3 = [0.1, -0.2, 0.3]\n\n    @allure.story(\"测试乘法\")\n    @pytest.mark.mul\n    @pytest.mark.run(order=4)\n    def test_mul(self, get_calc, get_datas3):\n        # 调用通过mul方法\n        with allure.step(\"计算两个数相减\"):\n            result = get_calc.mul(get_datas3[0], get_datas3[1])\n        # 判断result是浮点数，作出保留两位小数的处理\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到结果之后，需要写断言\n>       assert result == get_datas3[2]\nE       assert -0.02 == 0.3\n\ntest_calc.py:53: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1613654698526,
+      "stop" : 1613654698526,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_datas3",
+    "time" : {
+      "start" : 1613654698743,
+      "stop" : 1613654698743,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.02 == 0.3",
+    "statusTrace" : "self = <test_calc.TestCalc object at 0x0000024BCD673490>, get_calc = <calc.calculator object at 0x0000024BCD5CE5B0>, get_datas3 = [0.1, -0.2, 0.3]\n\n    @allure.story(\"测试乘法\")\n    @pytest.mark.mul\n    @pytest.mark.run(order=4)\n    def test_mul(self, get_calc, get_datas3):\n        # 调用通过mul方法\n        with allure.step(\"计算两个数相减\"):\n            result = get_calc.mul(get_datas3[0], get_datas3[1])\n        # 判断result是浮点数，作出保留两位小数的处理\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到结果之后，需要写断言\n>       assert result == get_datas3[2]\nE       assert -0.02 == 0.3\n\ntest_calc.py:53: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数相减",
+      "time" : {
+        "start" : 1613654698743,
+        "stop" : 1613654698743,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "260785defaac7af5",
+      "name" : "stdout",
+      "source" : "260785defaac7af5.txt",
+      "type" : "text/plain",
+      "size" : 61
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_datas3::0",
+    "time" : {
+      "start" : 1613654698749,
+      "stop" : 1613654698749,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试乘法"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "tag",
+    "value" : "mul"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-5AM7K0K"
+  }, {
+    "name" : "thread",
+    "value" : "14824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_datas3",
+    "value" : "[0.1, -0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=4)", "mul" ]
+  },
+  "source" : "88bd4e50f36b8c24.json",
+  "parameterValues" : [ "[0.1, -0.2, 0.3]" ]
+}
